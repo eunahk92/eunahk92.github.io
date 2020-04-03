@@ -1,0 +1,45 @@
+* {
+    font-family: 'Questrial', sans-serif;
+}
+
+body {
+    margin-bottom: 50px;
+}
+
+.bigWord {
+    color: lightseagreen;
+    float: left;
+    font-size: 75px;
+    line-height: 60px;
+    padding: 5px;
+    text-transform: lowercase ;
+} 
+
+.card-title {
+    color: lightseagreen;
+}
+
+.smallCaps {
+    font-variant: small-caps;
+}
+
+.container-sm {
+    float: none;
+}
+
+.jumboNo {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 6rem;
+    margin: 0;
+    padding: 0;
+    margin-left: 1rem;
+    letter-spacing: -3px;
+    color: lightseagreen;
+
+}
+
+/* Border for my picture (optional)
+img {
+    border: 2px dashed black;
+    padding: 5px; 
+} */
