@@ -38,6 +38,11 @@ body {
 
 }
 
+#bottomDiv {
+    position: absolute;
+    bottom: 200px;
+}
+
 /* Border for my picture (optional)
 img {
     border: 2px dashed black;
