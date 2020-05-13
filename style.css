@@ -1,44 +1,78 @@
 * {
-    font-family: 'Questrial', sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
 body {
-    margin-bottom: 50px;
+    background-image: url('./assets/backgroundimage.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#name {
+    background-color: white;
+    color: #4e2525;
+    opacity: 0.5;
+    min-width: 25rem;
+}
+
+#nav {
+    min-width: 25rem;
+    margin-bottom: 4rem;
+    background-color: #4e2525;
+    color: white;
+}
+
+h5 {
+    letter-spacing: -1px;
 }
 
 .bigWord {
-    color: lightseagreen;
-    float: left;
-    font-size: 75px;
+    color: #843232;
+    font-size: 85px;
     line-height: 60px;
-    padding: 5px;
-    text-transform: lowercase ;
-} 
-
-.card-title {
-    color: lightseagreen;
+    letter-spacing: -8px;
+    text-transform: lowercase;
 }
 
-.smallCaps {
-    font-variant: small-caps;
+.bigWordName {
+    color: black;
+    font-size: 85px;
+    line-height: 60px;
+    letter-spacing: -8px;
+    text-transform: lowercase;
 }
 
-.container-sm {
-    float: none;
+a {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
 }
 
-.jumboNo {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 6rem;
-    margin: 0;
-    padding: 0;
-    margin-left: 1rem;
-    letter-spacing: -3px;
-    color: lightseagreen;
 
+@media screen and (max-width: 767px) {
+    #name {
+        min-width: 20rem;
+    }
+    
+    #nav {
+        min-width: 20rem;
+        margin-bottom: 2rem;
+    }
 }
 
-#bottomDiv {
-    position: absolute;
-    bottom: 200px;
+@media screen and (max-width: 320px) {
+    #name {
+        min-width: 15rem;
+    }
+    
+    #nav {
+        min-width: 15rem;
+        margin-bottom: 2rem;
+    }
 }
