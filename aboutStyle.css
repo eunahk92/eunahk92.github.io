@@ -1,0 +1,140 @@
+* { font-family: 'DM Sans', sans-serif; }
+
+body {
+    background-image: url('./assets/backgroundimage2.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: .9;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+main div {
+    background-color: white;
+    width: 50%;
+    padding: 1rem;
+    max-width: 30rem;
+    opacity: .7;
+    color: darkslategray;
+}
+
+#nav {
+    min-width: 25rem;
+    margin-bottom: 3rem;
+    background-color: darkslategray;
+    color: white;
+}
+
+.typewriter, .typewriter2 { overflow: hidden; }
+
+.cursor {
+    display: inline-block;
+    width: 3px;
+    background-color: #ccc;
+    margin-left: .5rem;
+    font-size: 45px;
+    animation: blink 1s infinite;
+}
+
+.cursorMini {
+    display: inline-block;
+    width: 3px;
+    background-color: #ccc;
+    margin-left: .5rem;
+    animation: blink 1s infinite;
+}
+
+.cursor.typing { animation: none; }
+.cursorMini.typing { animation: none; }
+
+h3 {
+    margin-top: 5px;
+    padding: 0;
+}
+
+p { 
+    margin-left: 5px; 
+    font-weight: bold;
+}
+
+.bigWord {
+    color: darkslategray;
+    font-size: 70px;
+    line-height: 50px;
+    letter-spacing: -5px;
+    text-transform: lowercase;
+    margin-bottom: 0px;
+}
+
+.headerTitle {
+    color: white;
+    font-size: 85px;
+    line-height: 60px;
+    letter-spacing: -8px;
+    text-transform: lowercase;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+} 
+
+a {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+img {
+    min-width: auto;
+    max-width: 40rem;
+    max-height: 27rem;
+}
+
+
+@keyframes blink {
+    0% { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100% { background-color: #ccc; }
+}
+
+@media screen and (max-width: 767px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+    main div {
+        width: auto;
+        min-height: 20rem;
+    }
+    #nav {
+        min-width: 20rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #nav {
+        min-width: 15rem;
+        margin-bottom: 2rem;
+    }
+}
