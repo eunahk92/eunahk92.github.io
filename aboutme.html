@@ -12,18 +12,26 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <h4 class="d-block d-sm-none">EK</h4>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <ul>
+                <li class="d-block d-sm-none">Menu</li>
+                <li><i class="fas fa-home mr-2 mt-1"></i><a class="p-0 mt-1" href="index.html">Homepage</a></li>
+                <li><i class="far fa-address-card mr-2 mt-1"></i><a class="p-0 mt-1" href="aboutme.html">About Me</a></li>
+                <li><i class="fas fa-archive mr-2 mt-1"></i><a class="p-0 mt-1" href="portfolio.html">Portfolio</a></li>
+                <li><i class="fas fa-envelope-open-text mr-2 mt-1"></i><a class="p-0 mt-1" href="contactme.html">Contact Me</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
     <header>
         <h5 class="headerTitle">About me</h5>
-
-        <nav class="card" id="nav">
-            <div class="card-body pt-1">
-                <h5 class="m-0 p-0">Menu</h5>
-                <i class="fas fa-home float-left ml-3 mr-2 mt-1"></i><a class="nav-link p-0 mt-1" href="index.html">Homepage</a>
-                <i class="far fa-address-card float-left ml-3 mr-2 mt-1"></i><a class="nav-link p-0 mt-1" href="aboutme.html">About Me</a>
-                <i class="fas fa-archive float-left ml-3 mr-2 mt-1"></i><a class="nav-link p-0 mt-1" href="portfolio.html">Portfolio</a>
-                <i class="fas fa-envelope-open-text float-left ml-3 mr-2 mt-1"></i><a class="nav-link p-0 mt-1" href="contactme.html">Contact Me</a>
-            </div>
-        </nav>
     </header>
 
     <main>
@@ -31,10 +39,14 @@
         <div id="intro-para">
             <span class="bigWord typewriter"></span><span class="cursor">&nbsp;</span><br>
             <span id="locationLine"></span>
-            <span class="typewriter2"></span><span class="bio">&nbsp;</span><br>
+            <span class="typewriter2"></span><span class="bio">&nbsp;</span><br><br>
+            <span class="row add-content"></span>
         </div>
     </main>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js"></script>
 

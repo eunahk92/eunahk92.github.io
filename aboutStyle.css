@@ -22,25 +22,42 @@ header {
 main {
     display: flex;
     justify-content: center;
+    margin-bottom: 3rem;
 }
 
 main div {
     background-color: white;
-    width: 50%;
+    width: 100%;
     padding: 1rem;
     max-width: 30rem;
     opacity: .7;
     color: darkslategray;
 }
 
-#nav {
-    min-width: 25rem;
-    margin-bottom: 3rem;
+nav {
+    max-width: 100vw;
+    display: flex;
     background-color: darkslategray;
     color: white;
 }
 
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px;
+}
+
+li {
+    padding-left: 20px;
+    display: flex;
+}
+
 .typewriter, .typewriter2 { overflow: hidden; }
+
+.card-body {
+    padding: 1%;
+}
 
 .cursor {
     display: inline-block;
@@ -59,8 +76,7 @@ main div {
     animation: blink 1s infinite;
 }
 
-.cursor.typing { animation: none; }
-.cursorMini.typing { animation: none; }
+.cursor.typing, .cursorMini.typing { animation: none; }
 
 h3 {
     margin-top: 5px;
@@ -82,13 +98,13 @@ p {
 }
 
 .headerTitle {
-    color: white;
+    color: darkslategray;
     font-size: 85px;
     line-height: 60px;
     letter-spacing: -8px;
     text-transform: lowercase;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 } 
 
 a {
@@ -97,9 +113,7 @@ a {
     color: white;
 }
 
-a:hover {
-    color: white;
-}
+a:hover { color: white; }
 
 img {
     min-width: auto;
@@ -126,15 +140,9 @@ img {
         width: auto;
         min-height: 20rem;
     }
-    #nav {
-        min-width: 20rem;
-        margin-bottom: 2rem;
-    }
+    ul { flex-direction: column; }
 }
 
 @media screen and (max-width: 320px) {
-    #nav {
-        min-width: 15rem;
-        margin-bottom: 2rem;
-    }
+    ul { flex-direction: column; }
 }
