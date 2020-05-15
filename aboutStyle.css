@@ -17,6 +17,7 @@ header {
     justify-content: center;
     align-items: center;
     opacity: .9;
+    margin-top: 2rem;
 }
 
 main {
@@ -33,6 +34,8 @@ main div {
     opacity: .7;
     color: darkslategray;
 }
+
+/* Nav stylings start */
 
 nav {
     max-width: 100vw;
@@ -52,6 +55,10 @@ li {
     padding-left: 20px;
     display: flex;
 }
+
+/* Nav stylings start */
+
+/* Typewriter animation starts */
 
 .typewriter, .typewriter2 { overflow: hidden; }
 
@@ -73,6 +80,9 @@ li {
 }
 
 .cursor.typing, .cursorMini.typing { animation: none; }
+
+/* Typewriter animation ends */
+
 
 h3 {
     margin-top: 5px;
