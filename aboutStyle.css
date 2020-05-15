@@ -55,10 +55,6 @@ li {
 
 .typewriter, .typewriter2 { overflow: hidden; }
 
-.card-body {
-    padding: 1%;
-}
-
 .cursor {
     display: inline-block;
     width: 3px;
