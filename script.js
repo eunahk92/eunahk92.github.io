@@ -4,13 +4,13 @@ const nameCursor = document.querySelector('.cursor');
 const bioCursor = document.querySelector('.bio');
 
 const content = `
-    <span class="col-md-6 text-center">
+    <span class="col-md-6 text-center" id="skills-content">
         <h5>Skills:</h5>
         <p class="m-0 p-0">Adobe Photoshop</p>
         <p class="m-0 p-0">Microsoft Office</p>
         <p class="m-0 p-0">Fluent in English & Korean</p>
         </span>
-    <span class="col-md-6 text-center">
+    <span class="col-md-6 text-center" id="lang-content">
         <h5>Languages:</h5>
         <p class="m-0 p-0">HTML</p>
         <p class="m-0 p-0">CSS</p>
