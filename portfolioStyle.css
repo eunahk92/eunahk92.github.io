@@ -57,6 +57,14 @@ p {
     color: white;
 }
 
+.smallWord { 
+    font-size: smaller;
+    color: lightblue;
+}
+
+.smallGrey {
+    color: #ccc;
+}
 .bigWord {
     color: #1e3d63;
     font-size: 70px;
