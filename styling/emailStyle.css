@@ -1,7 +1,7 @@
 * { font-family: 'DM Sans', sans-serif; }
 
 body {
-    background-image: url('./assets/backgroundimage5.jpg');
+    background-image: url('../assets/backgroundimage5.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
