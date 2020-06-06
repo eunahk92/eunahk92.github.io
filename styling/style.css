@@ -1,0 +1,80 @@
+* {
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    background-image: url('./assets/backgroundimage.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#name {
+    background-color: white;
+    color: #4e2525;
+    opacity: 0.5;
+    min-width: 25rem;
+}
+
+#nav {
+    min-width: 25rem;
+    margin-bottom: 4rem;
+    background-color: #4e2525;
+    color: white;
+    opacity: .9;
+
+}
+
+h5 {
+    letter-spacing: -1px;
+}
+
+.bigWord {
+    color: #843232;
+    font-size: 85px;
+    line-height: 60px;
+    letter-spacing: -8px;
+    text-transform: lowercase;
+}
+
+.bigWordName {
+    color: black;
+    font-size: 85px;
+    line-height: 60px;
+    letter-spacing: -8px;
+    text-transform: lowercase;
+}
+
+a {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+
+
+@media screen and (max-width: 767px) {
+    #name {
+        min-width: 20rem;
+    }
+    
+    #nav {
+        min-width: 20rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #name {
+        min-width: 15rem;
+    }
+    
+    #nav {
+        min-width: 15rem;
+        margin-bottom: 2rem;
+    }
+}
