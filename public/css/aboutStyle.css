@@ -21,21 +21,6 @@ header {
     margin-bottom: 2rem;
 }
 
-main {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 3rem;
-}
-
-main div {
-    background-color: white;
-    width: 100%;
-    padding: 1rem;
-    max-width: 30rem;
-    opacity: .7;
-    color: darkslategray;
-}
-
 /* Nav stylings start */
 
 nav {
@@ -57,42 +42,18 @@ li {
     display: flex;
 }
 
-/* Nav stylings end */
-
-/* Typewriter animation starts */
-
-.typewriter, .typewriter2 { overflow: hidden; }
-
-.cursor {
-    display: inline-block;
-    width: 3px;
-    background-color: #ccc;
-    margin-left: .5rem;
-    font-size: 45px;
-    animation: blink 1s infinite;
-}
-
-.cursorMini {
-    display: inline-block;
-    width: 3px;
-    background-color: #ccc;
-    margin-left: .5rem;
-    animation: blink 1s infinite;
-}
-
-.cursor.typing, .cursorMini.typing { animation: none; }
-
-/* Typewriter animation ends */
-
-
-h3 {
+h6 {
     margin-top: 5px;
     padding: 0;
+    font-family: 'Bungee', cursive;
+    padding: 2px;
 }
 
 p { 
     margin-left: 5px; 
-    font-weight: bold;
+    padding: 2px;
+    font-family: 'Bungee', cursive;
+    text-indent: 10%;
 }
 
 .bigWord {
@@ -126,13 +87,19 @@ img {
     max-height: 27rem;
 }
 
+#intro {
+    display: flex;
+    justify-content: end;
+}
 
-@keyframes blink {
-    0% { background-color: #ccc; }
-    49% { background-color: #ccc; }
-    50% { background-color: transparent; }
-    99% { background-color: transparent; }
-    100% { background-color: #ccc; }
+img {
+    width: 200px;
+    height: 300px;
+}
+
+#intro h5 {
+    flex-grow: 4;
+    align-self: flex-end;
 }
 
 @media screen and (max-width: 767px) {
