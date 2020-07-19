@@ -31,7 +31,7 @@ body {
 
 }
 
-h5 {
+h5, h6 {
     letter-spacing: -1px;
 }
 
@@ -54,6 +54,14 @@ h5 {
 a {
     font-family: 'Courier New', Courier, monospace;
     font-size: 15px;
+    color: #843232;
+}
+
+a:hover { color: #843232; }
+
+#linksContainer {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
