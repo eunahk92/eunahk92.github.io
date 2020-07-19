@@ -18,8 +18,7 @@ const content = `
     </span>
 `
 const name = 'eunah kim';
-const description = 'I graduated from the University of Central Florida in 2015. I am aspiring to be a Software Developer and currently am honing and maturing my skills to be an efficient Full Stack Web Developer. My hobbies include, photography, graphic design, and traveling.'
-
+const description = 'I graduated from the University of Central Florida in 2015. I am aspiring to be a Software Developer and currently am honing and maturing my skills to be an efficient Full Stack Web Developer. My hobbies include, photography, graphic design, and traveling.';
 const typingDelay = 50;
 let nameIndex = 0;
 let descIndex = 0;
@@ -52,7 +51,7 @@ typeDesc = () => {
         descLine.textContent += description.charAt(descIndex);
         descIndex++;
         setTimeout(typeDesc, typingDelay);
-    }  else {
+    } else {
         bioCursor.classList.remove('typing');
         setTimeout(function() {
             bioCursor.classList.remove('cursorMini');
@@ -62,8 +61,5 @@ typeDesc = () => {
         }, typingDelay + 2000);
     }
 }
-
-document.addEventListener('DOMContentLoaded', function() {
-    setTimeout(typeName, typingDelay + 1100);
-})
+$(document).ready(() => setTimeout(typeName, typingDelay + 1100));
 
